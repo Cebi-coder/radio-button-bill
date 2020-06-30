@@ -17,8 +17,6 @@ function radioBillTotal() {
     if (checkedRadioBtn){
         var billItemType = checkedRadioBtn.value
         
-    
-
     if ( billItemType === "call") {
         totalCall += 2.75
     }
