@@ -1,4 +1,4 @@
-function radioButtonBill() {
+function radioBillTotal() {
 
     var totalCall = 0;
     var totalSms = 0;
@@ -30,7 +30,7 @@ function radioButtonBill() {
         return costTotal;
     }
     return {
-        radioButtonBill,
+        radioBillTotal,
         radioBillTotal,
         getTotalCall,
         getTotalSms,

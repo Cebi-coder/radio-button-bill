@@ -11,29 +11,29 @@ var totalCall = 0;
 var totalSms = 0;
 var costTotal = 0
 
-function radioBillTotal() {
+//function radioBillTotal() {
 
-    var checkedRadioBtn = document.querySelector("input[name='billItemType']:checked");
-    if (checkedRadioBtn){
-        var billItemType = checkedRadioBtn.value
+   // var checkedRadioBtn = document.querySelector("input[name='billItemType']:checked");
+   // if (checkedRadioBtn){
+       // var billItemType = checkedRadioBtn.value
         
-    if ( billItemType === "call") {
-        totalCall += 2.75
-    }
-    else if ( billItemType === "sms") {
-        totalSms += 0.75;
-    }
+    //if ( billItemType === "call") {
+      //  totalCall += 2.75
+    //}
+    //else if ( billItemType === "sms") {
+      //  totalSms += 0.75;
+    //}
 
     
-    callTotalRadio.innerHTML = totalCall.toFixed(2);
-    smsTotalRadio.innerHTML = totalSms.toFixed(2);
+    //callTotalRadio.innerHTML = totalCall.toFixed(2);
+    //smsTotalRadio.innerHTML = totalSms.toFixed(2);
 
-    costTotal = totalCall + totalSms;
-    totalTwoElem.innerHTML = costTotal.toFixed(2);
+    //costTotal = totalCall + totalSms;
+    //totalTwoElem.innerHTML = costTotal.toFixed(2);
 
-    totalColor();
-}
-}
+    //totalColor();
+//}
+//}
 
 function totalColor() {
 
