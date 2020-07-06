@@ -13,6 +13,7 @@ function radioButtonBill() {
             totalCall += 2.75
         }
         else if (billItemType === "sms") {
+            
             totalSms += 0.75;
         }
     }
