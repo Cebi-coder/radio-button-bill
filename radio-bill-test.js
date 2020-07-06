@@ -12,7 +12,7 @@ describe("The radio bil button factory function", function () {
         assert.equal(0.75, radioBill.getTotalSms());
 
     });
-    it('should add call and sms cost to total when the add button is pressed', function(){
+    it('should add call and sms cost to total when the add button is pressed', function () {
         let radioBill = radioButtonBill();
 
         radioBill.radioBillTotal("call");
