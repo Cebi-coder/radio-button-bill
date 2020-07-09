@@ -1,4 +1,4 @@
-function radioBillTotal() {
+function radioBillCost() {
 
     var totalCall = 0;
     var totalSms = 0;
@@ -26,15 +26,23 @@ function radioBillTotal() {
 
     }
     function getTotal() {
-        costTotal = totalSms + totalCall;
-        return costTotal;
+        return totalSms + totalCall;
+        
+    }
+    function totalColor(){
+        if(getTotal >= 30){
+            return "danger"
+        }
+        else if(getTotal >= 20){
+            return "warning"
+        }
     }
     return {
-        radioBillTotal,
+        //radioBillCost,
         radioBillTotal,
         getTotalCall,
         getTotalSms,
         getTotal,
-
+        totalColor,
     }
 }
