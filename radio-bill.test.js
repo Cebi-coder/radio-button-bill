@@ -20,4 +20,15 @@ describe("The radio bil button factory function", function () {
         assert.equal(3.50, radioBill.getTotal());
 
     });
+    it("should be able to change the total color to orange when the warning level is reached", function () {
+
+        radioBillCost("call,call,call,call,call,call,call,call")
+        assert.equal("warning", totalColor());
+    });
+    it("should be able to change the total to the color red when the danger level is reached", function () {
+
+        radioBillCost("call,call,call,call,call,call,call,call,call,call")
+        assert.equal("danger", totalColor());
+    });
 });
+

@@ -7,9 +7,11 @@ const totalTwoElem = document.querySelector(".totalTwo");
 
 
 const radioBill = radioBillCost();
+//const newColor = radioBillCost(styleColor);
 
 function clickedButton() {
 
+  var checkedRadioBtn = document.querySelector("input[name='billItemType']:checked");
 
   var billItemType = billItemTypeRadio.value.trim();
 

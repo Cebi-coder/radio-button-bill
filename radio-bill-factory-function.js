@@ -13,10 +13,14 @@ function radioBillCost() {
             totalCall += 2.75
         }
         else if (billItemType === "sms") {
-            
+
             totalSms += 0.75;
         }
+
     }
+    //roundedBillTotal = costTotal.toFixed(2);
+    //return roundedBillTotal;
+
     function getTotalCall() {
         return totalCall;
 
@@ -27,18 +31,18 @@ function radioBillCost() {
     }
     function getTotal() {
         return totalSms + totalCall;
-        
+
     }
-    function totalColor(){
-        if(getTotal >= 30){
+    function totalColor() {
+        if (getTotal() >= 30) {
             return "danger"
         }
-        else if(getTotal >= 20){
+        else if (getTotal() >= 20) {
             return "warning"
         }
     }
     return {
-        //radioBillCost,
+        
         radioBillTotal,
         getTotalCall,
         getTotalSms,
